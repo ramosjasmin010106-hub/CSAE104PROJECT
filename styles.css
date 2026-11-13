@@ -21,14 +21,14 @@ grid-template-areas:
 
 header {
 grid-area: header;
-background-color: #082b80;
+background-color:   #ff9999;
 color: white;
 padding: 15px 20px;
 display: flex;
 align-items: center;
 font-size: 20px;
 font-weight: bold;
-border-bottom: 4px solid #e5b629;
+border-bottom: 4px solid #ca6382;
 }
 
 header img {
