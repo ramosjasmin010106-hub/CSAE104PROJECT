@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Saint Philomene of Alcala, Inc.">
+    <title>Saint Philomene of Alcala, Inc.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION WITH CAMPUS BACKGROUND -->
+    <header>
+        <div class="brand-group">
+            <img src="SPA LOGO.jpg" alt="Saint Philomene of Alcala, Inc. Official Seal" class="header-logo">
+            <div>
+                <h1>Saint Philomene of Alcala, Inc.</h1>
+            </div>
+        </div>
+
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="#notices">Notices</a></li>
+                <li><a href="#deadlines">Deadlines</a></li>
+                <li><a href="#submit">Post a Notice</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- CAMPUS NOTICES -->
+        <section id="notices">
+
+            <h2>Campus Notices</h2>
+
+            <div class="notices">
+
+                <article class="notice">
+                    <h3>Library Hours Extended</h3>
+                    <p class="meta">
+                        <time datetime="2026-10-12">12 October 2026</time>
+                        <span class="tag">Academic</span>
+                    </p>
+                    <p>
+                        The library stays open until 9 PM during
+                        midterm week.
+                    </p>
+                </article>
+
+                <article class="notice">
+                    <h3>New Campus Shuttle Route</h3>
+                    <p class="meta">
+                        <time datetime="2026-10-14">14 October 2026</time>
+                        <span class="tag">Transport</span>
+                    </p>
+                    <p>
+                        A shuttle now runs every 15 minutes between
+                        the residence halls and the science building.
+                    </p>
+                </article>
+
+                <article class="notice">
+                    <h3>Student Art Exhibition Opens</h3>
+                    <p class="meta">
+                        <time datetime="2026-10-16">16 October 2026</time>
+                        <span class="tag">Arts</span>
+                    </p>
+                    <p>
+                        Student artwork will be displayed in the
+                        campus gallery from Monday through Friday.
+                    </p>
+                </article>
+
+                <article class="notice">
+                    <h3>Programming Competition</h3>
+                    <p class="meta">
+                        <time datetime="2026-10-18">18 October 2026</time>
+                        <span class="tag">Technology</span>
+                    </p>
+                    <p>
+                        Students are invited to join the upcoming
+                        campus programming competition.
+                    </p>
+                </article>
+
+                <article class="notice">
+                    <h3>Wi-Fi Maintenance</h3>
+                    <p class="meta">
+                        <time datetime="2026-10-20">20 October 2026</time>
+                        <span class="tag">Announcement</span>
+                    </p>
+                    <p>
+                        Campus Wi-Fi will undergo scheduled
+                        maintenance on Sunday morning.
+                    </p>
+                </article>
+
+                <article class="notice">
+                    <h3>Student Organization Registration</h3>
+                    <p class="meta">
+                        <time datetime="2026-10-22">22 October 2026</time>
+                        <span class="tag">Students</span>
+                    </p>
+                    <p>
+                        Students may register for their preferred
+                        campus organizations at the student affairs office.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- POST A NOTICE -->
+        <section id="submit">
+            <h2>Post a Notice</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="title">Title</label>
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        required
+                        maxlength="100">
+                </p>
+
+                <p>
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="academic">Academic</option>
+                        <option value="event">Event</option>
+                        <option value="general">General</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </p>
+
+                <p>
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        required></textarea>
+                </p>
+
+                <p>
+                    <label for="email">Your Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+                </p>
+
+                <button type="submit">Post Notice</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside id="deadlines">
+
+        <h2>Upcoming Deadlines</h2>
+
+        <table>
+            <caption>Deadlines This Month</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Activity</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Enrolment Ends</td>
+                    <td>20 January</td>
+                </tr>
+
+                <tr>
+                    <td>Programming Contest Registration</td>
+                    <td>25 January</td>
+                </tr>
+
+                <tr>
+                    <td>Library Book Return</td>
+                    <td>28 January</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Saint Philomene of Alcala, Inc.
+        </p>
+        <p>&copy; 2026 Campus Notices</p>
+    </footer>
+
+</body>
+</html>

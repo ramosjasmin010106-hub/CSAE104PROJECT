@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 3 Layout Practical</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #1f2933;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1d4e89;
+        }
+
+        h2 {
+            color: #1d4e89;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border: 1px solid #d9e2ec;
+            border-radius: 8px;
+        }
+
+        .box {
+            padding: 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            border-radius: 6px;
+        }
+
+        /* FLEXBOX LAYOUT */
+
+        .flex-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .flex-layout .box {
+            flex: 1 1 150px;
+        }
+
+        /* GRID LAYOUT */
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        /* BOX COLORS */
+
+        .a { background: #1d4e89; }
+        .b { background: #2874a6; }
+        .c { background: #3498db; }
+        .d { background: #16a085; }
+        .e { background: #e67e22; }
+        .f { background: #8e44ad; }
+
+        @media (max-width: 500px) {
+            .grid-layout {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Week 3 Layout Practical</h1>
+
+    <!-- FLEXBOX VERSION -->
+
+    <section class="container">
+        <h2>Layout Using Flexbox</h2>
+
+        <div class="flex-layout">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+        </div>
+    </section>
+
+    <!-- GRID VERSION -->
+
+    <section class="container">
+        <h2>Layout Using CSS Grid</h2>
+
+        <div class="grid-layout">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+        </div>
+    </section>
+
+</body>
+</html>
